@@ -2,11 +2,21 @@
 a, a:visited{
     color:#ffffff
 }
-li.active{
-  background-color: #2b2b2b;
-  border:2px  #2b282b solid 2px;
+nav ul li a{
+  text-decoration: none
 }
-
+.skip a{
+  position: absolute;
+  top: -40px;
+  color:black;
+}
+ nav > a:active{
+  background-color: #2b282b;
+}
+.skip a:focus{
+  
+  top: 20px;
+}
 body{
     background-image: url(../images/backg.jpeg);
 }
@@ -57,7 +67,7 @@ nav ul li{
     
 }
 
-nav ul li:hover {
+nav ul li:hover , nav ul li:focus{
   background: #545454;
   text-decoration: none;
 }
