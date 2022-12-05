@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="skip" ><a href="#about">Skip to Main Content</a></div>
+        <div class="skip" ><a href="#photointro">Skip to Main Content</a></div>
         <div class="intro">
             <div class="title">
             <img class="logo" src="images/logo.png" alt="">
@@ -24,57 +24,59 @@
             <ul>
                 <li><a href="main.html">Home</a></li>
                 <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="photos.html">Photos</a></li>
+                <li class="active"><a href="photos.html">Photos</a></li>
                 
             </ul>
         </nav>
     </header>
     <main>
-        <div>
+        <div class="intro" id = "photointro" tabindex = "0">
         <h1>My Baking Photos and Reviews!</h1>
-        <p>Here are photos of things that I have actually baked, and how I decorated them! Click on the photos to take a closer look!</p>
+        <p class="longp">In addition to my favorite recipes, I wanted to show a couple of things that I have baked. So, below are photos of a couple of things I have baked in the past, and a little description of them as well. Click on the photos to view them closer, in a convenient slideshow format.</p>
+        <p class="medp">Here are photos of things that I have actually baked, and how I decorated them! Click on the photos to take a closer look in a slideshow style!</p>
+        <p class="shortp">Click on the photos below to see things I have baked.</p>
         </div>
         <div class="photintro">
             <a href="images/hbd.jpeg" target="blank" data-lightbox="dessert">
-            <img src="images/hbd.jpeg" alt=""> 
+            <img src="images/hbd.jpeg" alt="a birthday cake with chocolate and vanilla icing"> 
             <figcaption>Here is a happy birthday cake I baked for my sister Brianna! I used vanilla cake and chocolate and vanilla icing.</figcaption>
             </a>
             <a href="images/sluttyb.jpeg" target="blank" data-lightbox="dessert">
-            <img src="images/sluttyb.jpeg" alt=""> 
+            <img src="images/sluttyb.jpeg" alt="a brownie with cookie dough and oreos in it"> 
             <figcaption>These are loaded brownies. I made these for my family with brownie mix, cookie dough, and oreos.</figcaption>
             </a>
             <a href="images/muff.jpeg" target="blank" data-lightbox="dessert">
-            <img src="images/muff.jpeg" alt=""> 
+            <img src="images/muff.jpeg" alt="a chocolate chips muffin"> 
             <figcaption>These are chocolate chip muffins I made for my family. </figcaption>
         </a>
         <a href="images/sloanecake.jpeg" target="blank" data-lightbox="dessert">
-            <img src="images/sloanecake.jpeg" alt=""> 
+            <img src="images/sloanecake.jpeg" alt="a birthday cake with vanilla icing and sprinkles"> 
             <figcaption>This is a birthday cake I made for my friend Sloane. I used vanilla cake and vanilla icing.</figcaption>
         </a>
         <a href="images/19.jpeg" target="blank" data-lightbox="dessert">
-            <img src="images/19.jpeg" alt=""> 
+            <img src="images/19.jpeg" alt="a birthday cake with chocolate icing"> 
             <figcaption>This is a birthday cake I made for my sister Brianna. I used chocolate cake and chocolate icing.</figcaption>
         </a>
         <a href="images/cupc.jpeg" target="blank" data-lightbox="dessert">
-            <img src="images/cupc.jpeg" alt=""> 
+            <img src="images/cupc.jpeg" alt="a cupcake made with chocolate and vanilla icing"> 
             <figcaption>These are cupcakes I made, just for fun. I used vanilla cake batter and chocolate and vanilla icing.</figcaption>
         </a>
         <a href="images/bark.jpeg" target="blank" data-lightbox="dessert">
-            <img src="images/bark.jpeg" alt=""> 
+            <img src="images/bark.jpeg" alt="chocolate bark with dark, semisweet, and vanilla chocolate with oreos on top"> 
             <figcaption>This is chocolate bark that I made for my high school football team and friends. I used dark, milk, and white chocolate as well as oreo pieces.</figcaption>
         </a>
         <a href="images/barksup.jpeg" target="blank" data-lightbox="dessert">
-            <img src="images/barksup.jpeg" alt=""> 
+            <img src="images/barksup.jpeg" alt="bags of chocolate and other ingredients used to make chocolate bark"> 
             <figcaption>These are all the ingredients I used to make chocolate bark.</figcaption>
         </a>
         <a href="images/atoms.jpeg" target="blank" data-lightbox="dessert">
-            <img src="images/atoms.jpeg" alt=""> 
+            <img src="images/atoms.jpeg" alt="an image of a cake with pink icing and green cake balls on top"> 
             <figcaption>This is a cake I made for a science project. I used chocolate cake, and vanilla cake pops on top. I used vanilla icing for both the cake and the cake pops.</figcaption>
             </a>
         </div>
     </main>
     <footer>
-        
+        <p>Caitlin O'Grady, Portfolio created for SI339 at the University of Michigan. Created November 2022</p>
     </footer>
     <script src="dist/js/lightbox-plus-jquery.js">
         lightbox.option({
