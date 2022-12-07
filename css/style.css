@@ -1,3 +1,14 @@
+.intro1 {
+  background-image: url(../images/sprinkles.gif);
+}
+@media screen and (prefers-reduced-motion: reduce){
+  .intro1{
+      background-image: none;
+  }
+}
+main{
+  font-family: serif
+}
 /*keeping links the same color before and after visitng */
 a, a:visited{
     color:#ffffff
@@ -20,6 +31,7 @@ nav ul li a{
 .active{
   background: #545454;
   text-decoration: underline;
+  border: solid lightgray 2px;
 }
 nav li:hover , nav li:focus{
   background: #545454;
@@ -38,7 +50,7 @@ ul{
     
 }
 /*header and nav styling */
-header .intro{
+header .intro, header .intro1{
     background-color: white;
     border: #8b8589 3px solid;
 }
@@ -79,7 +91,7 @@ nav ul li{
 }
 
 /*recipe flex styling */
-.intro{
+.intro, .intro1{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,7 +103,7 @@ nav ul li{
     justify-content: space-around;
     justify-items: center;
     align-items: center;
-
+    
 }
 figure img{
     width: 100%;
@@ -251,7 +263,7 @@ footer{
   border: solid #808080 10px;
 }
 
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     nav ul{
       -webkit-border-radius: 28;
       -moz-border-radius: 28;
@@ -266,10 +278,12 @@ footer{
       text-decoration: none;
       margin: 5px;
       height: 50px;
+      justify-content: space-evenly;
   }
     .container{
         display: grid;
         grid-template-columns: 30% 30% 30%;
+        
     }
     .controls{
         display: flex;
@@ -339,7 +353,7 @@ footer{
     }
   }
 
-  @media (min-width: 1500px){
+  @media (min-width: 1200px){
     .container{
         display: grid;
         grid-template-columns: 23% 23% 23% 23%;
@@ -353,7 +367,7 @@ footer{
         display: flex;
         justify-content: center;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: end;
     }
     
     
